@@ -8,33 +8,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
     <title>Alon Ishay</title>
   </head>
   <body>
 
     <!-- Navigation Bar -->
-      <nav class="navbar navbar-expand-xl position-fixed w-100" id="home">
+    <nav class="navbar navbar-expand-xl position-fixed w-100 bot" id="home">
         <div class="container-fluid" id="navLinks">
-            <div class="row w-75 text-center mx-auto py-2">
+            <div class="row text-center mx-auto py-2">
                 <div class="col-4">
-                    <a class="nav-item nav-link bg-warning rounded text-white" href="index.html">Home</a>
+                    <a class="nav-item nav-link bg-primary rounded text-white" href="index.html">Home</a>
+                </div>
+                <div class="col-4">
+                    <a class="nav-item nav-link bg-warning rounded text-white" href="#personal-info-section">About me</a>
                 </div>
                 <div class="col-4">
                     <a class="nav-item nav-link bg-danger rounded text-white" href="#portfolio-section">Portfolio</a>
                 </div>
-                <div class="col-4">
-                    <a class="nav-item nav-link bg-primary rounded text-white" href="#">Personal Info</a>
-                </div>
             </div>
         </div>
-      </nav>
+  </nav>
 
     <!-- Main Content -->
     <div class="container-fluid px-0">
    
     <!-- Hero Content -->
-    <div class="container-fluid" id="heading">
-        <div class="container w-25 " id="main-description">
+    <div class="container-fluid border-bottom" id="heading">
+        <div class="container" id="main-description">
             <div class="rounded shadow p-5 light-opacity-info" id="descripion">
                 <div class="text-center">
                     <h1 class="display-3 text-white">Alon Ishay</h1>
@@ -55,52 +56,120 @@
         </div>
     </div>
 
-    <hr id="portfolio-section"/>
+    <hr id="personal-info-section"/>
+    <!-- Personal Info -->
+    <div class="container mt-5" id="about">
+        <div class="row">
+          <div class="col-xl-7" id="left-side-about">
+              <div class="aspectRatioBox rounded shadow" id="left-side-image" style="background-image: url('./images/personal-info.jpg')">
+              </div>
+            </div>
 
+          <div class="col-11 m-auto ml-xl-0 col-xl-5 shadow rounded">  
+            <div class="mt-5">
+                <h3 class="text-center"><b>About me</b></h3>
+                <!-- <li class="mt-0"><b>From:</b> <span class="ml-2">Frankfurt, Germany<i class="far fa-check-square ml-4"></i></span></li> -->
+                <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">From:</th>
+                        <td>Frankfurt, Germany</td>
+                        <td><i class="far fa-check-square"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Studies:</th>
+                        <td>Psychology (Vienna, Austria)</td>
+                        <td><i class="far fa-check-square"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Languages:</th>
+                        <td>English, German, Hebrew</td>
+                        <td><i class="far fa-check-square"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Services:</th>
+                        <td>Front end Development</td>
+                        <td><i class="far fa-check-square"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td>Back end Development</td>
+                        <td><i class="far fa-check-square"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <ul class="list-unstyled bg-warning text-white shadow rounded py-3 text-center mt-4">
+                      <h4 class="mb-0">My Goals in Life</h4>
+                      <li class="mt-2 pt-1"><cite>- Saving humanity from climate change, one step at a time -<cite></li>
+                      <li class="mt-2"><cite>- Building the website of your dreams -<cite></li>
+                      <li class="mt-2"><cite>- Being happy -<cite></li>
+                    </ul>
+            </div>
+          </div>
+        </div>
+     </div>
     <!-- Portfolio -->
+    <hr id="portfolio-section"/>
     <div class="container mt-5" id="portfolio">
-        <h1 class="text-center text-danger">Portfolio</h1>
-        
-        <div class="row mt-5">
-            <div class="col-6">
-                <div class="aspectRatioBox16-9 rounded" style="background-image: url('https://via.placeholder.com/320x200');">
+        <hr id="horizontal-row-portfolio"/>
+            <h1 class="text-center mt-5">Portfolio</h1>
+            <div class="row mt-5">
+                <div class="col-12 col-md-6">
+                    <div class="aspectRatioBox16-9 rounded" style="background-image: url('./images/portfolio.png');">
+                    </div>
+                    <div class="pt-3 text-center">
+                      <h4>Website name</h4>
+                      <p>Website descripion</p>
+                    </div>
                 </div>
-                <div class="pt-2 text-center">
-                  <h4>Website name</h4>
-                  <p>Website descripion</p>
+                <div class="col-12 col-md-6">
+                    <div class="aspectRatioBox16-9 rounded" style="background-image: url('./images/portfolio.png');">
+                    </div>
+                    <div class="pt-3 text-center">
+                      <h4>Website name</h4>
+                      <p>Website descripion</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="aspectRatioBox16-9 rounded" style="background-image: url('https://via.placeholder.com/320x200');">
+    
+            <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                    <div class="aspectRatioBox16-9 rounded" style="background-image: url('./images/portfolio.png');">
+                    </div>
+                    <div class="pt-3 text-center">
+                      <h4>Website name</h4>
+                      <p>Website descripion</p>
+                    </div>
                 </div>
-                <div class="pt-2 text-center">
-                  <h4>Website name</h4>
-                  <p>Website descripion</p>
+                <div class="col-12 col-md-6">
+                    <div class="aspectRatioBox16-9 rounded" style="background-image: url('./images/portfolio.png');">
+                    </div>
+                    <div class="pt-3 text-center">
+                      <h4>Website name</h4>
+                      <p>Website descripion</p>
+                    </div>
                 </div>
             </div>
-        </div>
+            
+        </div> 
+  </div>
 
-        <div class="row mt-3">
-            <div class="col-6">
-                <div class="aspectRatioBox16-9 rounded" style="background-image: url('https://via.placeholder.com/320x200');">
-                </div>
-                <div class="pt-2 text-center">
-                  <h4>Website name</h4>
-                  <p>Website descripion</p>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="aspectRatioBox16-9 rounded" style="background-image: url('https://via.placeholder.com/320x200');">
-                </div>
-                <div class="pt-2 text-center">
-                  <h4>Website name</h4>
-                  <p>Website descripion</p>
-                </div>
-            </div>
-        </div>
-    </div> 
-
-</div>
+    <!-- Footer -->
+    <footer class="container-fluid mt-5">
+      <div class="row">
+          <div class="col text-center py-5 border-top">
+            <p>Copyright © Ishay Ltd. 2019. All Rights Reserved</p>
+          </div>
+      </div>
+    </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
